@@ -1,5 +1,5 @@
 # VjetsPythia8
-Repo to store the VjetsPythia8 simulations, both the fiducial version and the updated simulation with matching &amp; merging implemented.
+This is a GitHub repository created to store the VjetsPythia8 simulations, both the fiducial version and the updated simulation with matching &amp; merging implemented.
 
 After unpacking the VjetsPythia8 tarball, you should see the main code, VjetsPythia8.cc, in addition to a host of supporting files.  First, let's cover the command files.
 
