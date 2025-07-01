@@ -1,5 +1,5 @@
-# WplusJets
-This is a GitHub repository created to store the VjetsPythia8 simulations, both the fiducial version and the updated simulation with matching &amp; merging implemented.
+# W+Jets
+This is a GitHub repository created to store the W+Jets simulations, both the fiducial version and the updated simulation with matching &amp; merging implemented.
 
 This document serves as a guide to the various files required to run the simulations, but it should not be regarded as exhaustive!  Please feel free to direct any questions to the author, Ben Johnson: bjohns18@tufts.edu.
 
