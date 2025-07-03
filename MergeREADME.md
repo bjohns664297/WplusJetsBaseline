@@ -1,4 +1,4 @@
-#W+JetsMerge
+# W+JetsMerge
 
 This is a GitHub repository created to store the W+Jets simulations, both the fiducial version and the updated simulation with matching &amp; merging implemented.  The fiducial or baseline version is stored in one tarball titled WplusJetsBaseline, and the matching &amp; merging version resides in WplusJetsMerge.  All of the supporting files relevant to each simulation can also be found in their respective tarballs.
 
