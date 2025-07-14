@@ -6,7 +6,7 @@ This is a GitHub repository created to store the W+Jets simulations, both the fi
 
 This document serves as a guide to the various files required to run the simulations, but it should not be regarded as exhaustive!  Please feel free to direct any questions to the author, Ben Johnson: bjohns18@tufts.edu.
 
-The first step would be to retrieve the code and supporting materials from the GitHub.  To do so, navigate to a directory on the cluster where you would like to store everything, then input "wget https://github.com/bjohns664297/WplusJets/edit/main/WplusJetsBaseline.tgz".  Then, unpack the tarball with "tar -xzvf WplusJetsBaseline.tgz".  
+The first step would be to retrieve the code and supporting materials from the GitHub.  To do so, navigate to a directory on the cluster where you would like to store everything, then input "wget https://github.com/bjohns664297/WplusJets/releases/download/WplusJetsBaseline/WplusJetsBaseline.tgz".  Then, unpack the tarball with "tar -xzvf WplusJetsBaseline.tgz".  
 
 II. ROOT SETUP
 
