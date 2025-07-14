@@ -1,14 +1,17 @@
 # W+JetsMerge
 
 I. INTRODUCTION
+
 This is a GitHub repository created to store the W+Jets simulations, both the fiducial version and the updated simulation with matching &amp; merging implemented.  The fiducial or baseline version is stored in one tarball titled WplusJetsBaseline, and the matching &amp; merging version resides in WplusJetsMerge.  All of the supporting files relevant to each simulation can also be found in their respective tarballs.  I've also included the code used to analyze the outputs of the Pythia simulation in a third tarball titled WplusJetsAnalysis.  Within it, you will find the detector simulation which implements event reconstruction as well as the analysis and plotting code (the plotting code is very messy, but can be used as a starting point for generating your own graphics).
 
 This document serves as a guide to the various files required to run the simulations, but it should not be regarded as exhaustive!  Please feel free to direct any questions to the author, Ben Johnson: bjohns18@tufts.edu.
 
 II. ROOT SETUP
+
 After unpacking the WplusJetsMerge tarball, you should see the main code, VjetsPythia8.cc, in addition to a host of supporting files.  Before anything else, it's good form to switch off the login node you're connected to by accessing the cluster via SSH.  You should also initialize ROOT from the CERN Virtual Machine File System (CVMFS).  This can be accomplished easily by accessing the text file included in the tarball named ROOTCopyPasta.txt.  NOTE: there are a few methods of connecting to a computing node and loading ROOT included in this file.  You should only run four lines of code total (you can copy and paste them directly into the terminal).  The first will begin with "srun" (this connects you to a node, and I generally recommend the "largemem" version); then, the next two will begin with "export," then "source" (these define a path to where the ROOT versions are stored in the CVMFS, and you should wait a few seconds after running the "source" command); finally, end with one of the lines beginning in "lsetup" to complete the ROOT initialization.  Since this code was compiled with Pythia8.302, you should use the “lsetup” command labeled with that version.  If all goes well, you should now be connected to a computing node running ROOT.  Now, let’s review the various files in the tarball to summarize their roles.  First, we can cover the command files.
 
 III. COMMAND FILES
+
 The command files end in .cmnd, and they provide instructions for Pythia to run the physics simulations.  There are three primary command files and two support files for the CKKW-L merge.  The primary files are VjetsPythia8_kTDurham.cmnd, VjetsPythia8_PTLund.cmnd, and VjetsPythia8_Phase.cmnd.  These each represent different approaches to the W+Jets simulation, with each of the three implementing the CKKW-L merging scheme specified in the title.  You will supply one of the primary .cmnd files as a command line input when running the script so that Pythia can perform the simulation as desired.
 
 The two support command files are read in by the main program automatically, and they contain a variety of settings and parameters relevant to the simulation.  These include, but are not limited to, the number of events, the random seed, the physics tunes, and a variety of Standard Model values like particle masses.  It's essential to properly adjust the support command files when running the simulations, but you don't need to include them on the command line.
