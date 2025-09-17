@@ -1459,6 +1459,14 @@ int main(int argc, char* argv[])
 
     // Note: These settings are specified in the input file
 
+
+    pythia.readFile("MyPythia8Simul_RunParameters.cmnd");
+  
+    pythia.readFile("MyPythia8Simul_PhysicsParameters.cmnd");
+
+
+
+
     pythia.readFile(argv[1]);
 
 
