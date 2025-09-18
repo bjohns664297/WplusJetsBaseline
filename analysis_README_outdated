@@ -15,7 +15,7 @@ Outputs a file with truth-level and reco-level data.
 Output: pythia-outputs/data.root
 Runs with:
 	cd run-pythia
-	./MyPythia8Simul MyPythia8Simul.cmnd -outroot data
+	./MyPythia8Simul MyPythia8Simul_Main.cmnd -outroot data
 where the last field, "data", sets the name of the output file to "data.root", 
 it is automatically saved to the directory pythia-outputs/
 
